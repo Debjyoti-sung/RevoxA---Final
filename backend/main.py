@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Import local service connectors
-from .services.hindsight import get_hindsight_client
-from .services.groq_reasoning import get_groq_reasoning_client
+from services.hindsight import get_hindsight_client
+from services.groq_reasoning import get_groq_reasoning_client
 
 app = FastAPI(
     title="RevoxA Memory Intelligence API",
